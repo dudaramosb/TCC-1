@@ -1,6 +1,9 @@
 import { Header } from "../components/Header";
-import Robo from "../assets/images/robo.png";
 import { Footer } from "../components/Footer";
+import Robo from "../assets/robo.png";
+
+
+import { BsFileText, BsShieldFillCheck, BsBarChartLine } from "react-icons/bs";
 
 export function Home() {
   return (
@@ -17,18 +20,14 @@ export function Home() {
               Tecnologia com empatia: um robô que ajuda idosos a lembrar dos seus
               medicamentos e cuidar da saúde com mais autonomia.
             </p>
-            <button className="px-4 py-2 bg-[var(--color-azul-claro)] text-[var(--color-branco)] font-semibold rounded-lg hover:opacity-90 transition mb-6">
-              Baixar o aplicativo
-            </button>
+            <button type="button" class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 cursor-pointer font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-6 ">Baixar aplicativo</button>
             <div>
               <h3 className="font-semibold text-[#063557] dark:text-[var(--color-texto-claro)] mb-2">
                 Lembrete de medicamentos
               </h3>
               <p className="text-sm text-gray-600 dark:text-[var(--color-texto-claro)]">
-                Desenvolvido pensando
-                especialmente em idosos que
-                moram sozinhos ou precisam de
-                auxilio no dia a dia.
+                Desenvolvido pensando especialmente em idosos que moram sozinhos
+                ou precisam de auxílio no dia a dia.
               </p>
             </div>
           </div>
@@ -44,8 +43,11 @@ export function Home() {
 
         <section className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-14 mb-12 max-w-7xl w-full">
           <div className="p-6 bg-[var(--color-azul-claro-detalhes)] dark:bg-[var(--color-quadrados-escuros)] rounded-lg shadow-md text-center">
-            <h3 className="font-semibold text-gray-800 dark:text-[var(--color-texto-claro)] mb-3">
-              💊 Lembretes inteligentes
+            <div className="flex justify-center mb-3 text-2xl text-[#063557] dark:text-[var(--color-texto-claro)]">
+              <BsFileText />
+            </div>
+            <h3 className="font-semibold text-gray-800 dark:text-[var(--color-texto-claro)] mb-2">
+              Lembretes inteligentes
             </h3>
             <p className="text-gray-600 dark:text-[var(--color-texto-claro)] text-sm">
               Alertas em tempo real para cada medicação.
@@ -53,8 +55,11 @@ export function Home() {
           </div>
 
           <div className="p-6 bg-[var(--color-azul-claro-detalhes)] dark:bg-[var(--color-quadrados-escuros)] rounded-lg shadow-md text-center">
-            <h3 className="font-semibold text-gray-800 dark:text-[var(--color-texto-claro)] mb-3">
-              🛡 Uso seguro dos medicamentos
+            <div className="flex justify-center mb-3 text-2xl text-[#063557] dark:text-[var(--color-texto-claro)]">
+              <BsShieldFillCheck />
+            </div>
+            <h3 className="font-semibold text-gray-800 dark:text-[var(--color-texto-claro)] mb-2">
+              Uso seguro dos medicamentos
             </h3>
             <p className="text-gray-600 dark:text-[var(--color-texto-claro)] text-sm">
               Pensado na autonomia e segurança especialmente de idosos na hora de medicar-se.
@@ -62,8 +67,11 @@ export function Home() {
           </div>
 
           <div className="p-6 bg-[var(--color-azul-claro-detalhes)] dark:bg-[var(--color-quadrados-escuros)] rounded-lg shadow-md text-center">
-            <h3 className="font-semibold text-gray-800 dark:text-[var(--color-texto-claro)] mb-3">
-              📈 Acompanhamento de saúde
+            <div className="flex justify-center mb-3 text-2xl text-[#063557] dark:text-[var(--color-texto-claro)]">
+              <BsBarChartLine />
+            </div>
+            <h3 className="font-semibold text-gray-800 dark:text-[var(--color-texto-claro)] mb-2">
+              Acompanhamento de saúde
             </h3>
             <p className="text-gray-600 dark:text-[var(--color-texto-claro)] text-sm">
               Relatórios e registros acessíveis a qualquer momento.

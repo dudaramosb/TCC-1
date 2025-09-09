@@ -6,7 +6,7 @@
     --color-azul-claro: #4A90E2;         
     --color-texto-azul-escuro:#063557;         
     --color-branco: #FFFFFF; 
-    --color-azul-claro-detalhes: #E6ECF0;       
+    --color-azul-claro-detalhes: #E8F5FF;       
     --color-texto-cinza-medio: #222222;        
     --color-texto-cinza-claro: #555555;        
     --color-preto-texto: #000000;         
@@ -15,5 +15,19 @@
     --color-fundo-escuro: #090A10;      
     --color-texto-claro: #FFFFFF;        
     --color-cinza-azulado: #1B1D32; 
-    --color-quadrados-escuros: #1F2038;               
+    --color-quadrados-escuros: #101728;    
+
   }
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; 
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+
+.hide-scrollbar:hover {
+  scrollbar-width: auto; 
+}

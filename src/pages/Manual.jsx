@@ -1,54 +1,55 @@
 import { Header } from "../components/Header";
-
+import { Footer } from "../components/Footer";
 
 export function Manual() {
-  const { theme } = useContext(ThemeContext);
-
   return (
-    <div className={`min-h-screen ${theme === "dark" ? "bg-gray-900 text-gray-100" : "bg-gray-50 text-gray-800"}`}>
+    <div className="min-h-screen bg-[var(--color-branco)] dark:bg-[var(--color-fundo-escuro)]">
       <Header />
 
-      <main className="max-w-4xl mx-auto px-6 py-12">
-        <h1 className="text-4xl font-bold mb-8 text-center">
-          Manual de Uso
-        </h1>
-
-        <section className="mb-10">
-          <h2 className="text-2xl font-semibold mb-4">Como Usar</h2>
-          <p className="leading-relaxed mb-2">
-            Aqui você vai aprender passo a passo como utilizar nosso sistema de forma prática e eficiente.
+      <main className="px-8 py-12 text-[var(--color-preto-texto)] dark:text-[var(--color-texto-claro)]">
+        
+        <div className="max-w-4xl mx-auto text-center mb-12">
+          <h1 className="text-5xl font-bold mb-4 text-[#063557] dark:text-[var(--color-texto-claro)]">Como usar?</h1>
+          <p className="text-lg opacity-80 text-[var(--color-texto-cinza-medio)] dark:text-[var(--color-texto-claro)]">
+            Este guia mostra como usar o robô Luma.
           </p>
-          <ul className="list-disc list-inside space-y-2">
-            <li>Passo 1: Faça login na sua conta.</li>
-            <li>Passo 2: Navegue até a seção desejada.</li>
-            <li>Passo 3: Siga as instruções de cada módulo.</li>
-            <li>Passo 4: Salve suas alterações antes de sair.</li>
-          </ul>
-        </section>
+        </div>
 
-        <section className="mb-10">
-          <h2 className="text-2xl font-semibold mb-4">Dicas e Observações</h2>
-          <p className="leading-relaxed mb-2">
-            Lembre-se de sempre revisar suas informações antes de enviar. Caso encontre algum problema, entre em contato com o suporte.
-          </p>
-          <ul className="list-disc list-inside space-y-2">
-            <li>Use um navegador atualizado para melhor experiência.</li>
-            <li>Mantenha suas credenciais seguras.</li>
-            <li>Consulte nossa FAQ para dúvidas comuns.</li>
-          </ul>
-        </section>
+        <section className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+          
+          <div className="text-left md:pl-4 lg:pl-8 space-y-8">
+              <div>
+                <h2 className="text-2xl font-semibold mb-2" style={{ color: 'var(--color-azul-claro)' }}>1. Configure os horários no aplicativo</h2>
+                <p>No app da Luma, cadastra-se os horários e o nome de cada medicação conforme a rotina do idoso e guarda o remédio no compartimento do robô.</p>
+              </div>
 
-        <section>
-          <h2 className="text-2xl font-semibold mb-4">Contato</h2>
-          <p className="leading-relaxed">
-            Para suporte, envie um email para{" "}
-            <a href="mailto:suporte@empresa.com" className="text-blue-500 underline">
-              suporte@empresa.com
-            </a>{" "}
-            ou ligue para (00) 1234-5678.
-          </p>
+              <div>
+                <h2 className="text-2xl font-semibold mb-2" style={{ color: 'var(--color-azul-claro)' }}>2. A Luma avisa no horário certo</h2>
+                <p>Quando chega o momento de tomar o remédio, a Luma' emite um alarme sonoro e visual (LED piscando) para alertar o idoso.</p>
+              </div>
+
+              <div>
+                <h2 className="text-2xl font-semibold mb-2" style={{ color: 'var(--color-azul-claro)' }}>3. O idoso aperta o botão</h2>
+                <p>Após o aviso, o idoso pressiona um botão na Luma para confirmar que está pronto para se medicar.</p>
+              </div>
+
+              <div>
+                <h2 className="text-2xl font-semibold mb-2" style={{ color: 'var(--color-azul-claro)' }}>4. A gavetinha se abre</h2>
+                <p>A Luma libera o compartimento do remédio, usando um motor, permitindo acesso seguro e controlado à dose certa.</p>
+              </div>
+
+              <div>
+                <h2 className="text-2xl font-semibold mb-2" style={{ color: 'var(--color-azul-claro)' }}>5. Registro automático no app</h2>
+                <p>A ação é registrada no aplicativo, formando um histórico de uso para que familiares ou profissionais de saúde acompanhem a adesão ao tratamento.</p>
+              </div>
+          </div>
+
+    
+          <div className="flex justify-center md:justify-end items-start">
+          </div>
         </section>
       </main>
+      <Footer />
     </div>
   );
 }
