@@ -11,7 +11,7 @@ export function Jogos() {
       <main className="flex flex-col items-center justify-center flex-grow px-6 py-12">
         <div className="flex items-center gap-3 mb-6">
           <MdOutlineVideogameAsset className="text-5xl text-blue-600 dark:text-blue-400 drop-shadow-lg" />
-          <h1 className="text-3xl md:text-3xl font-bold text-center drop-shadow-lg text-[rgb(255,255,255)]">
+          <h1 className="text-3xl md:text-3xl font-bold text-center drop-shadow-lg text-[rgb(28,47,90)] dark:text-[#ffffff]">
             Ajude o vovô
           </h1>
         </div>
