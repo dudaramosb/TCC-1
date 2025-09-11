@@ -30,11 +30,11 @@ export function Produtos() {
   const total = produtos.reduce((acc, item) => acc + item.preco, 0);
 
   return (
-    <div className="flex flex-col min-h-screen bg-gray-100 dark:bg-[#000000] text-gray-900 dark:text-white relative">
+    <div className="flex flex-col min-h-screen bg-[#ffffff] dark:bg-[#000000] text-gray-900 dark:text-white relative">
       <Header />
 
       <main className="flex-1 flex flex-col items-center p-6">
-        <h1 className="text-3xl font-bold mb-4 text-center">Produtos</h1>
+        <h1 className="text-3xl font-bold mb-4 text-center text-[#063557] dark:text-[#ffffff]">Produtos</h1>
         <p className="text-center text-gray-600 dark:text-gray-300 mb-8">
           Produtos usados no nosso projeto
         </p>
@@ -45,7 +45,7 @@ export function Produtos() {
               key={produto.id}
               className="w-[370px] h-[380px] border border-gray-300 dark:border-gray-700 rounded-xl p-4 bg-white dark:bg-[#090A10] shadow-lg hover:scale-105 transition-transform duration-300 flex flex-col justify-between"
             >
-              <div className="h-2/3 flex items-center justify-center bg-gray-200 dark:bg-[#1B1D32] text-gray-500 dark:text-gray-300 rounded-lg mb-3">
+              <div className="h-2/3 flex items-center justify-center bg-[#E8F5FF] dark:bg-[#1B1D32] text-gray-500 dark:text-gray-300 rounded-lg mb-3">
                 {produto.imagem ? (
                   <img
                     src={produto.imagem}
