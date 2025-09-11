@@ -1,5 +1,9 @@
 import { FaGithub, FaLinkedin, FaInstagram, FaWhatsapp } from "react-icons/fa";
-import { Link } from "../components/Link";
+
+
+import {Link} from "react-router"
+
+
 
 export function Footer() {
   return (

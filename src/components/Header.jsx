@@ -2,7 +2,9 @@ import { useEffect, useState } from "react";
 import { BsFillSunFill } from "react-icons/bs";
 import { IoMdMoon } from "react-icons/io";
 import { FaBook, FaInfoCircle, FaBox, FaLink } from "react-icons/fa";
-import { MdSportsEsports } from "react-icons/md"; 
+import { MdSportsEsports } from "react-icons/md";
+
+import {Link} from "react-router"
 
 export function Header() {
   const [darkMode, setDarkMode] = useState(false);
@@ -41,35 +43,36 @@ export function Header() {
         </button>
       </div>
 
-      <a
-        href="/"
+      <Link
+        to="/"
         className="text-[var(--color-branco)] hover:scale-105 transition-all duration-300 text-[20px] sm:text-[28px] font-bold text-center absolute left-1/2 -translate-x-1/2"
       >
         LUMA
-      </a>
+      </Link>
 
       <nav className="flex items-center space-x-3 sm:space-x-6 text-[var(--color-branco)]">
-        <a href="/referencias" className="flex flex-col items-center hover:opacity-80 transition">
+       <Link to="/referencias" className="flex flex-col items-center hover:opacity-80 transition">
           <FaLink className="text-base sm:text-lg mb-0.5" />
           <span className="hidden sm:inline text-[10px] sm:text-xs">Links</span>
-        </a>
-        <a href="/instrucoes" className="flex flex-col items-center hover:opacity-80 transition">
+        </Link>
+        
+        <Link to="/instrucoes" className="flex flex-col items-center hover:opacity-80 transition">
           <FaBook className="text-base sm:text-lg mb-0.5" />
           <span className="hidden sm:inline text-[10px] sm:text-xs">Instruções</span>
-        </a>
-        <a href="/produtos" className="flex flex-col items-center hover:opacity-80 transition">
+        </Link>
+        <Link to="/produtos" className="flex flex-col items-center hover:opacity-80 transition">
           <FaBox className="text-base sm:text-lg mb-0.5" />
           <span className="hidden sm:inline text-[10px] sm:text-xs">Produtos</span>
-        </a>
-        <a href="/sobre" className="flex flex-col items-center hover:opacity-80 transition">
+        </Link>
+        <Link to="/sobre" className="flex flex-col items-center hover:opacity-80 transition">
           <FaInfoCircle className="text-base sm:text-lg mb-0.5" />
           <span className="hidden sm:inline text-[10px] sm:text-xs">Nós</span>
-        </a>
+        </Link>
 
-        <a href="/jogos" className="flex flex-col items-center hover:opacity-80 transition">
+        <Link to="/jogos" className="flex flex-col items-center hover:opacity-80 transition">
           <MdSportsEsports className="text-base sm:text-lg mb-0.5" />
           <span className="hidden sm:inline text-[10px] sm:text-xs">Jogos</span>
-        </a>
+        </Link>
       </nav>
     </header>
   );
