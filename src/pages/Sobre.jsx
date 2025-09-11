@@ -4,13 +4,14 @@ import geImg from "../assets/ge.jpeg";
 import natiImg from "../assets/nati.jpeg";
 import faImg from "../assets/fa.jpeg";
 import rotiImg from "../assets/robson.jpeg";
-import { FaInstagram, FaLinkedin } from "react-icons/fa"; // 🔹 importei os ícones
+import duImg from "../assets/duda.jpeg"
+import { FaInstagram, FaLinkedin } from "react-icons/fa"; 
 
 export function Sobre() {
   const team = [
     { name: "Fabiolla Belo", img: faImg, linkedin: "https://linkedin.com", instagram: "https://instagram.com" },
     { name: "Geovanna Garcia", img: geImg, linkedin: "https://linkedin.com", instagram: "https://instagram.com" },
-    { name: "Maria Eduarda", img: "/team/maria.jpg", linkedin: "https://linkedin.com", instagram: "https://instagram.com" },
+    { name: "Maria Eduarda", img: duImg, linkedin: "https://linkedin.com", instagram: "https://instagram.com" },
     { name: "Natália Costa", img: natiImg, linkedin: "https://linkedin.com", instagram: "https://instagram.com" },
     { name: "Robson Piassa", img: rotiImg, linkedin: "https://linkedin.com", instagram: "https://instagram.com" },
   ];
@@ -34,7 +35,6 @@ export function Sobre() {
                 className="w-28 h-28 rounded-full object-cover shadow-lg"
               />
               <h3 className="mt-3 font-semibold">{member.name}</h3>
-              {/* 🔹 Ícones do Instagram e LinkedIn */}
               <div className="flex gap-3 mt-2">
                 <a href={member.instagram} target="_blank" rel="noreferrer" className="text-gray-600 dark:text-white hover:opacity-75 text-xl">
                   <FaInstagram />
