@@ -45,7 +45,7 @@ export function Produtos() {
         {/* ✅ Botão que leva para /video usando o react-router */}
         <button
           onClick={() => navigate("/video")}
-          className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md mb-10 transition-transform transform hover:scale-105"
+          className="bg-blue-400 dark:bg-[#1B1D32] hover:bg-blue-500 dark:hover:bg-[#1B1D32] text-white font-semibold px-6 py-3 rounded-lg shadow-md mb-10 transition-transform transform hover:scale-105"
         >
           🎥 Ver vídeo do robô
         </button>
