@@ -1,6 +1,7 @@
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import { AiOutlineDollarCircle } from "react-icons/ai";
+import { useNavigate } from "react-router";
 
 import esp32 from "../assets/esp.png";
 import oled from "../assets/oled.png";
@@ -12,13 +13,13 @@ import fonte from "../assets/fonte.png";
 import protoboard from "../assets/protoboard.png";
 import fila from "../assets/fila.png";
 
-
-
 export function Produtos() {
+  const navigate = useNavigate();
+
   const produtos = [
     { id: 1, nome: "Módulo ESP32 Wi-Fi + Bluetooth", preco: 60, imagem: esp32 },
     { id: 2, nome: "Servo motor SG90 Micro 9g", preco: 25, imagem: servo },
-    { id: 3, nome: "Display  OLED 128x64 ", preco: 32, imagem: oled },
+    { id: 3, nome: "Display OLED 128x64", preco: 32, imagem: oled },
     { id: 4, nome: "RTC DS3231", preco: 35, imagem: rtc },
     { id: 5, nome: "Módulo de voz DFPlayer Mini + alto-falante", preco: 40, imagem: df },
     { id: 6, nome: "Buzzer e LEDs", preco: 10, imagem: buzzer },
@@ -34,11 +35,22 @@ export function Produtos() {
       <Header />
 
       <main className="flex-1 flex flex-col items-center p-6">
-        <h1 className="text-3xl font-bold mb-4 text-center text-[#063557] dark:text-[#ffffff]">Produtos</h1>
+        <h1 className="text-3xl font-bold mb-4 text-center text-[#063557] dark:text-[#ffffff]">
+          Produtos
+        </h1>
         <p className="text-center text-gray-600 dark:text-gray-300 mb-8">
           Produtos usados no nosso projeto
         </p>
 
+        {/* ✅ Botão que leva para /video usando o react-router */}
+        <button
+          onClick={() => navigate("/video")}
+          className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md mb-10 transition-transform transform hover:scale-105"
+        >
+          🎥 Ver vídeo do robô
+        </button>
+
+        {/* Grade dos produtos */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-center">
           {produtos.map((produto) => (
             <div
