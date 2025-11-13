@@ -67,7 +67,7 @@ export function Jogos() {
 
 
 
-        <a href ="https://jdevelop.com/seu-jogo"
+        <a href ="https://gd.games/games/83596ff1-f3fe-4eaa-a114-8eaaacd41437"
           className="flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 text-white font-semibold rounded-lg transition-transform transform hover:scale-105"
         >
           <FaPlayCircle className="text-2xl" />
